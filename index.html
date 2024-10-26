@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            BookStore
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>   
+        </ul>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+  <main id="home" class="main__header">
+       <div class="header header__content">
+        <h5>For All Your Reading Needs</h5>
+        <h2 class="main__title">Bostorek Bookstore</h2>
+        <p style="width: 500px;">
+            Discover the magic of reading at Bostorek Bookstore. 
+            Our cozy bookstore is filled with thousands of books 
+            for all ages and interests. Whether you're looking for 
+            a classic novel, the latest bestseller, or a unique 
+            gift, you're sure to find it here.
+        </p>
+    <button class="btn">Read More</button>
+    </div>
+       <div class="main__slider">
+            <div class="main__images">
+                <img src="./pictures/Bookshop-rafiki.png" class="main__img">
+                <img src="./pictures/Library-rafiki.png" class="main__img">
+                <img src="./pictures/Knowledge-rafiki (1).png" class="main__img">
+                <img src="./pictures/Reading book-amico.png" class="main__img">
+            </div>
+        </div>
+    </main>
+
+    <section class="sell">
+      <div class="main__selling">
+        <div class="col__1">
+          <span class="num" data-value="700">000</span>
+          <p>Explore our vast selection of over 700 books across various genres. Whether you're looking for fiction, non-fiction, or educational materials, we have something for every reader!</p>
+        </div>
+
+        <div class="col__1">
+          <span class="num" data-value="425">000</span>
+          <p>Join the 425 satisfied customers who have found their next favorite read in our store. We pride ourselves on personalized recommendations and excellent customer service.</p>
+        </div>
+
+        <div class="col__1">
+          <span class="num" data-value="1055">000</span>
+          <p>With 1,055 titles available, our collection continues to grow. Discover bestsellers, hidden gems, and timeless classics all in one place.</p>
+        </div>
+
+        <div class="col__1">
+          <span class="num" data-value="45">000</span>
+          <p>We feature 45 different genres to cater to diverse interests, from romance and thriller to science fiction and biography. Find your next adventure today!</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about" id="about">
+      <div class="about__img">
+        <img src="./pictures/Bibliophile-amico.png" alt="Books and reading" class="girl">
+        <img src="./pictures/Book lover-amico.png" class="boy" style="display: none;">
+      </div>
+      <div class="about__text">
+        <h5>Welcome to our community</h5>
+        <h2>About Us</h2>
+        <div class="initial-info">
+          <p>
+            Bostorek Bookstore is more than just 
+            a bookstore. It's a community of book 
+            lovers who share a passion for reading.
+          </p>
+          <h4>
+            We believe that books have the power 
+            to connect people, and we're committed 
+            to fostering a vibrant and inclusive literary 
+            community.
+          </h4>
+        </div>
+    
+        <div class="more-info" style="display: none;">
+          <p>Want to be the first to know about our newest 
+        arrivals, special discounts, and exciting author 
+        events? Follow us on social media! We post regular 
+        updates, giveaways, and behind-the-scenes content. 
+        Join our community of bookworms and never miss a 
+        thing!
+      </p>
+        </div>
+        <div class="about__socials" style="display: none;">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    
+        <div class="outer">
+          <div class="f__block">
+            <i class="fa-solid fa-calendar-days"></i>
+            We work without days off
+          </div>
+          <div class="f__block">
+            <i class="fa-solid fa-headset"></i>
+            We accept online orders
+          </div>
+        </div>
+        <button class="btn learn-more">Learn more</button>
+      </div>
+    </section>
+    
+	
+  <section class="shop">
+    <div class="shop__header">
+      <h1>Shopping</h1>
+      <div class="shop__cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p class="count">0</p>
+      </div>
+    </div>
+    
+    <div class="shop__container">
+      <div id="root"></div>
+      <div class="sidebar">
+        <div class="head">
+          <p>My Cart</p>
+        </div>
+        <div id="cartItem">
+        Your cart is empty
+        </div>
+        <div class="foot">
+          <h3>Total</h3>
+          <h2 id="total">$ 0.00</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="discount__container" id="discountContainer" style="margin-top: 20px;">
+    <div class="info">
+      <div class="discount__heading">Massive Sale</div>
+      <div class="discount__subheading">up to 75% off</div>
+    </div>
+  
+    <div class="countdown__timer">
+      <div class="group">
+        <div class="value days">00</div>
+        <div class="unit">Days</div>
+      </div>
+  
+      <div class="group">
+        <div class="value hours">00</div>
+        <div class="unit">Hrs</div>
+      </div>
+  
+      <div class="group">
+        <div class="value minutes">00</div>
+        <div class="unit">Min</div>
+      </div>
+  
+      <div class="group">
+        <div class="value seconds">00</div>
+        <div class="unit">Sec</div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About us</h3>
+            <p>Information our bookstore</p>
+            <p>Contacts</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#" style="color: white;">Home</a></li>
+                <li><a href="#" style="color: white;">About us</a></li>
+                <li><a href="#" style="color: white;">Products</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="title">Subscribe</h3>
+            <form>
+                <input type="email" placeholder="Ваш email">
+                <button type="submit" class="btn">Go</button>
+            </form>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024</p>
+    </div>
+</footer>
+   
+
+    <script src="./main.js"></script>
+</body>
+</html>
